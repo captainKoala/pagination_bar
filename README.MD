@@ -1,4 +1,4 @@
-#PAGINATION BAR
+# PAGINATION BAR
 
 The short script will help you to create simple pagination bar in your html-page. Just specify what is the current page 
 number and the total page numbers and enjoy it.
