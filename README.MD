@@ -1,4 +1,4 @@
-# PAGINATION BAR
+# Pagination Bar
 
 The short script will help you to create simple pagination bar in your html-page. Just specify what is the current page 
 number and the total page numbers and enjoy it.
@@ -44,9 +44,9 @@ You can change some parameters if you want. Just add them as `ul`-tag attribute:
 > It has an effect on `li` element.
 * `data-page-link-classes` - set if you want to specify your own css-class instead of `a.page-link`
 > It has an effect on `a` element.
-* `data-link-active-classes` - set if you want to specify your own css-class instead of `a.active`
+* `data-link-active-classes` - set if you want to specify your own css-class instead of `li.active`
 > It has an effect on `li` element.
-* `data-link-disabled-classes` - set if you want to specify your own css-class instead of `a.disabled`
+* `data-link-disabled-classes` - set if you want to specify your own css-class instead of `li.disabled`
 > It has an effect on `li` element.
 
 
