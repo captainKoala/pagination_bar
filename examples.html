@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagination bar examples</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <style>
+        .custom-item {
+            border: 2px mediumaquamarine solid !important;
+        }
+        .custom-link {
+            color: darkred !important;
+        }
+        .custom-active a {
+            background-color: mediumaquamarine;
+        }
+    </style>
+</head>
+<body>
+    <main class="m-5">
+        <h1 class="my-5">Pagination bar examples</h1>
+        <p>We use <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/" target="_blank">Bootstrap</a>
+            styles for paginator examples on this page</p>
+
+        <h2 class="my-5">Full pagination bar</h2>
+
+        <h3 class="my-3">The first page of twenty</h3>
+        <p>The active link at the left position, the first page link and the previous page link are disabled.</p>
+        <div class="my-2">
+            <pre><code>&lt;ul class="pagination" data-current-page="1" data-num-pages="20"&gt;&lt;/ul&gt;</code></pre>
+        </div>
+        <ul class="pagination" data-current-page="1" data-num-pages="20"></ul>
+
+        <h3 class="my-3">The second page of twenty</h3>
+        <p>There is just one link before the active link</p>
+        <div class="my-2">
+            <pre><code>&lt;ul class="pagination" data-current-page="2" data-num-pages="20"&gt;&lt;/ul&gt;</code></pre>
+        </div>
+        <ul class="pagination" data-current-page="2" data-num-pages="20"></ul>
+
+        <h3 class="my-3">The third page of twenty</h3>
+        <p>The active link at the central position</p>
+        <div class="my-2">
+            <pre><code>&lt;ul class="pagination" data-current-page="3" data-num-pages="20"&gt;&lt;/ul&gt;</code></pre>
+        </div>
+        <ul class="pagination" data-current-page="3" data-num-pages="20"></ul>
+
+        <h3 class="my-3">The 5th page of twenty</h3>
+        <p>The active link at the central position too</p>
+        <div class="my-2">
+            <pre><code>&lt;ul class="pagination" data-current-page="5" data-num-pages="20"&gt;&lt;/ul&gt;</code></pre>
+        </div>
+        <ul class="pagination" data-current-page="5" data-num-pages="20"></ul>
+
+        <h3 class="my-3">The 10th page of twenty</h3>
+        <p>The active link at the central position too</p>
+        <div class="my-2">
+            <pre><code>&lt;ul class="pagination" data-current-page="10" data-num-pages="20"&gt;&lt;/ul&gt;</code></pre>
+        </div>
+        <ul class="pagination" data-current-page="10" data-num-pages="20"></ul>
+
+        <h3 class="my-3">The 19th page of twenty</h3>
+        <p>The active link at the pre-last position.</p>
+        <div class="my-2">
+            <pre><code>&lt;ul class="pagination" data-current-page="19" data-num-pages="20"&gt;&lt;/ul&gt;</code></pre>
+        </div>
+        <ul class="pagination" data-current-page="19" data-num-pages="20"></ul>
+
+        <h3 class="my-3">The 20th page of twenty</h3>
+        <p>The active link at the last position, the nex page link and the last page link are disabled.</p>
+        <div class="my-2">
+            <pre><code>&lt;ul class="pagination" data-current-page="20" data-num-pages="20"&gt;&lt;/ul&gt;</code></pre>
+        </div>
+        <ul class="pagination" data-current-page="20" data-num-pages="20"></ul>
+
+        <h2 class="my-5">All page labels on the current page</h2>
+        <h3 class="my-3">The first page of five</h3>
+        <p>All page links are on the current page: the first and the last page links are disabled.</p>
+        <div class="my-2">
+            <pre><code>&lt;ul class="pagination" data-current-page="1" data-num-pages="5"&gt;&lt;/ul&gt;</code></pre>
+        </div>
+        <ul class="pagination" data-current-page="1" data-num-pages="5"></ul>
+
+        <h3 class="my-3">The 5th page of five</h3>
+        <div class="my-2">
+            <pre><code>&lt;ul class="pagination" data-current-page="3" data-num-pages="5"&gt;&lt;/ul&gt;</code></pre>
+        </div>
+        <ul class="pagination" data-current-page="3" data-num-pages="5"></ul>
+
+        <h3 class="my-3">The 5th page of five</h3>
+        <div class="my-2">
+            <pre><code>&lt;ul class="pagination" data-current-page="5" data-num-pages="5"&gt;&lt;/ul&gt;</code></pre>
+        </div>
+        <ul class="pagination" data-current-page="5" data-num-pages="5"></ul>
+
+        <h2 class="my-5">Specify the number of page labels</h2>
+        <div class="my-2">
+            <pre><code>&lt;ul class="pagination" data-current-page="96" data-num-pages="100" data-links-per-paginator="10"&gt;&lt;/ul&gt;</code></pre>
+        </div>
+        <ul class="pagination" data-current-page="96" data-num-pages="100" data-links-per-paginator="10"></ul>
+
+        <div class="my-2">
+            <pre><code>&lt;ul class="pagination" data-current-page="96" data-num-pages="100" data-links-per-paginator="4"&gt;&lt;/ul&gt;</code></pre>
+        </div>
+        <ul class="pagination" data-current-page="96" data-num-pages="100" data-links-per-paginator="4"></ul>
+
+        <h2 class="my-5">Custom css-style classes</h2>
+        <p>Let's use custom css-classes for the pagination bar elements:</p>
+        <div class="my-2">
+            <pre><code>&lt;style&gt;
+    .custom-item {
+        border: 2px mediumaquamarine solid !important;
+    }
+    .custom-link {
+        color: darkred !important;
+    }
+    .custom-active a {
+        background-color: mediumaquamarine;
+    }
+&lt;/style&gt;
+            </code></pre>
+        </div>
+        <p>Pay attention, css-classes are specified here with the comma separator.</p>
+        <div class="my-2">
+            <pre><code>&lt;ul class="pagination" data-current-page="5" data-num-pages="5"
+                data-page-item-classes="page-item,custom-item"
+                data-page-link-classes="page-link,custom-link"
+                data-link-active-classes="custom-active"&gt;&lt;/ul&gt;
+            </code></pre>
+        </div>
+        <ul class="pagination" data-current-page="5" data-num-pages="5"
+            data-page-item-classes="page-item,custom-item" data-page-link-classes="page-link,custom-link"
+            data-link-active-classes="custom-active"></ul>
+    </main>
+
+    <script src="paginator.js"></script>
+</body>
+</html>
